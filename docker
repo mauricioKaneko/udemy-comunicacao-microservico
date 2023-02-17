@@ -1,0 +1,9 @@
+
+##### POSTGRES ####
+docker run --name auth-db -p 5432:5432 -e POSTGRES_DB=auth-db -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=123456 postgres:15
+
+docker run --name product-db -p 5433:5432 -e POSTGRES_DB=product-db -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=123456 postgres:15
+
+
+####### MONGODB ##########
+docker run --name sales-db -p 27017:28017 -e MONGO_DB="sales_db" -e MONGO_USER="admin" -e MONGO_PASSWORD="123456" tutum/mongodb
